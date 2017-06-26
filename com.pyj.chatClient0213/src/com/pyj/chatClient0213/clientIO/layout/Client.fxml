@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="369.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pyj.chatClient0213.clientIO.event.MainHandler">
+   <children>
+      <TextArea fx:id="txtDisplay" layoutX="5.0" prefHeight="313.0" prefWidth="593.0" style="-fx-background-color: gold;" />
+      <HBox layoutX="14.0" layoutY="325.0" prefHeight="35.0" prefWidth="585.0" spacing="10.0">
+         <children>
+            <Button fx:id="btnStartStop" mnemonicParsing="false" onAction="#onConnect" prefHeight="23.0" prefWidth="92.0" text="시작" />
+            <TextField fx:id="txtInput" onKeyPressed="#onTextFieldKeyPressed" prefHeight="23.0" prefWidth="386.0" />
+            <Button fx:id="btnSend" mnemonicParsing="false" onAction="#onSend" prefHeight="23.0" prefWidth="74.0" text="전송" />
+         </children>
+      </HBox>
+      <Button fx:id="btnPersonalMsg" layoutX="616.0" layoutY="20.0" mnemonicParsing="false" onAction="#onPersonalMsg" prefHeight="23.0" prefWidth="100.0" text="쪽지보내기" />
+   </children>
+</AnchorPane>

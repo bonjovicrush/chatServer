@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pyj.chatClient0213.clientIO.event.SignUpController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="150.0" text="ID">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldID" prefHeight="25.0" prefWidth="200.0" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="150.0" text="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordField1" prefHeight="25.0" prefWidth="200.0" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="150.0" text="Password Check">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordField2" prefHeight="25.0" prefWidth="200.0" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="35.0" prefWidth="446.0">
+         <children>
+            <Label fx:id="labelText" prefHeight="15.0" prefWidth="446.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Button fx:id="btnSignUp" mnemonicParsing="false" onAction="#onSignUp" prefHeight="76.0" prefWidth="55.0" text="등록" />
+            <Button fx:id="btnCancle" mnemonicParsing="false" prefHeight="49.0" prefWidth="55.0" text="취소" />
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="150.0" right="30.0" top="30.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="214.0" prefWidth="387.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pyj.chatClient0213.clientIO.event.LoginController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label prefHeight="58.0" prefWidth="70.0" text="ID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtID" prefHeight="23.0" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <padding>
+            <Insets left="30.0" right="30.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label prefHeight="58.0" prefWidth="70.0" text="Password" />
+            <PasswordField fx:id="txtPassword" prefHeight="23.0" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </PasswordField>
+         </children>
+         <padding>
+            <Insets left="30.0" right="30.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#onLogin" prefHeight="40.0" prefWidth="60.0" text="Login" />
+            <Button fx:id="btnCancle" mnemonicParsing="false" onAction="#onCancle" prefHeight="40.0" prefWidth="60.0" text="Cancle" />
+            <Button fx:id="btnSignUp" mnemonicParsing="false" onAction="#onSignUp" prefHeight="33.0" prefWidth="66.0" text="Sign Up" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="60.0" top="20.0" />
+         </padding>
+      </HBox>
+      <Label fx:id="loginState" prefHeight="15.0" prefWidth="354.0" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+   </padding>
+</VBox>
